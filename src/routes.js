@@ -1,5 +1,6 @@
 import PopularMovies from './components/PopularMovies.vue'
 import TopRatedMovies from './components/TopRatedMovies.vue'
+import SearchResults from './components/SearchResults.vue'
 import MovieDetails from './components/MovieDetails.vue'
 
 export default [
@@ -12,6 +13,10 @@ export default [
 
     {
         path: '/top-rated', name: 'top_rated', component: TopRatedMovies
+    },
+
+    {
+        path: '/search-results/:keyword', name: 'search', component: SearchResults, props: true
     },
 
     {
